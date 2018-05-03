@@ -1,4 +1,4 @@
-package com.fayne.demo.spring.framework.event;
+package com.fayne.demo.spring.framework.event.context;
 
 import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.Configuration;

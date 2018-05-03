@@ -1,7 +1,6 @@
-package com.fayne.demo.spring.framework.event;
+package com.fayne.demo.spring.framework.event.context;
 
 
-import com.fayne.demo.spring.framework.java_based.container.configration.MyService;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 
 /**

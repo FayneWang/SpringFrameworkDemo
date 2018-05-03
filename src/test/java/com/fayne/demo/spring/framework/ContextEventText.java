@@ -1,6 +1,6 @@
 package com.fayne.demo.spring.framework;
 
-import com.fayne.demo.spring.framework.event.EventConfig;
+import com.fayne.demo.spring.framework.event.context.EventConfig;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.test.context.ContextConfiguration;

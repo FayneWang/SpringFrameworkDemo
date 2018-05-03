@@ -1,4 +1,4 @@
-package com.fayne.demo.spring.framework.event;
+package com.fayne.demo.spring.framework.event.context;
 
 import org.springframework.context.ApplicationListener;
 import org.springframework.context.event.ContextStoppedEvent;
