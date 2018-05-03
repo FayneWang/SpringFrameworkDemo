@@ -30,7 +30,7 @@ public class I18nTest {
     @Test
     public void test() throws Exception {
 
-        String message = messageSource.getMessage("i18n.test",new Object[]{"test unit"}, Locale.getDefault());
+        String message = messageSource.getMessage("i18ntest",new Object[]{"test unit"}, Locale.getDefault());
         message = messageSource.getMessage("i18n.test",new Object[]{"test unit"},null, null);
         message = message;
     }
