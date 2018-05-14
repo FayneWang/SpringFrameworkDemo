@@ -1,6 +1,7 @@
 package com.fayne.demo.spring.framework.validator;
 
 import com.fayne.demo.spring.framework.validator.annotation.PersonInfoContraint;
+import org.springframework.format.annotation.NumberFormat;
 
 import javax.validation.Valid;
 import javax.validation.constraints.NotNull;
@@ -10,6 +11,8 @@ public class EmployeeInfo {
     @PersonInfoContraint
     private PersonInfo personInfo;
 
+    @NumberFormat
+    double salary;
 
     @NotNull
     private String duty;

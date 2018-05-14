@@ -12,8 +12,8 @@ public class PersonInfo {
 
     @NotNull(message = "姓名不能为空")
     private String name;
-    @Min(value = 1,message = "年龄最大小能小于1")
 
+    @Min(value = 1,message = "年龄最大小能小于1")
     @Max(value=100,message = "年瞈最大不能超过100")
     private int age;
 
