@@ -9,7 +9,6 @@ public class PersonInfoValidator implements ConstraintValidator<PersonInfoContra
 
     public void initialize(PersonInfoContraint constraintAnnotation) {
 
-
     }
 
     public boolean isValid(PersonInfo value, ConstraintValidatorContext context) {

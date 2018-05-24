@@ -1,7 +1,8 @@
 package com.fayne.demo.spring.framework.validator;
 
-import com.fayne.demo.spring.framework.validator.annotation.PersonInfoContraint;
+import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.Configuration;
+import org.springframework.web.servlet.config.annotation.EnableWebMvc;
 
 /**
  * @Author: Fayne.Wang
@@ -9,10 +10,7 @@ import org.springframework.context.annotation.Configuration;
  */
 
 @Configuration
+@EnableWebMvc
+@ComponentScan
 public class ValidatorConfig {
-
-    void setValidate(@PersonInfoContraint PersonInfo info){
-
-    }
-
 }

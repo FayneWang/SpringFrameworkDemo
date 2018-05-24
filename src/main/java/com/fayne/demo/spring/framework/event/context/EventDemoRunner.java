@@ -14,6 +14,5 @@ public class EventDemoRunner {
         ctx.start();
         ctx.stop();
         ctx.close();
-
     }
 }
