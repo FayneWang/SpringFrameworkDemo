@@ -1,26 +1,23 @@
 package com.fayne.demo.spring.framework.validator;
 
-import com.fayne.demo.spring.framework.validator.annotation.PersonInfoContraint;
 
-import javax.validation.Valid;
 import javax.validation.constraints.NotNull;
 
 public class EmployeeInfo {
 
-    @PersonInfoContraint
-    private PersonInfo personInfo;
+    private Person person;
 
 
     @NotNull
     private String duty;
 
 
-    public PersonInfo getPersonInfo() {
-        return personInfo;
+    public Person getPerson() {
+        return person;
     }
 
-    public void setPersonInfo(PersonInfo personInfo) {
-        this.personInfo = personInfo;
+    public void setPerson(Person person) {
+        this.person = person;
     }
 
     public String getDuty() {

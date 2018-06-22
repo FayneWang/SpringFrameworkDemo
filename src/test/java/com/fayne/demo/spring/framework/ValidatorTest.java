@@ -1,7 +1,7 @@
 package com.fayne.demo.spring.framework;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
-import com.fayne.demo.spring.framework.validator.PersonInfo;
+import com.fayne.demo.spring.framework.validator.Person;
 import com.fayne.demo.spring.framework.validator.ValidatorConfig;
 import org.junit.Before;
 import org.junit.Test;
@@ -41,13 +41,13 @@ public class ValidatorTest {
     public void testValidator() throws Exception {
         MockHttpServletRequestBuilder builder = post("/validator/persion");
 
-        PersonInfo personInfo = new PersonInfo();
-        personInfo.setAge(199);
+        Person person = new Person();
+        person.setAge(199);
 
-        boolean b = objectMapper.canSerialize(personInfo.getClass());
+        boolean b = objectMapper.canSerialize(person.getClass());
 
         builder.contentType(MediaType.APPLICATION_JSON_UTF8_VALUE);
-        builder.content(objectMapper.writeValueAsString(personInfo));
+        builder.content(objectMapper.writeValueAsString(person));
         ResultActions resultActions = mockMvc.perform(builder);
         int httpStatus = resultActions.andReturn().getResponse().getStatus();
     }

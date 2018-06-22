@@ -20,6 +20,5 @@ public class MyApp {
         ConfigurableEnvironment env = applicationContext.getEnvironment();
         applicationContext.removeBeanDefinition("foo");
         Integer i = (Integer) applicationContext.getBean("dependency-test");
-
     }
 }
