@@ -1,29 +1,36 @@
 package com.fayne.demo.spring.framework.validator;
 
-import com.fayne.demo.spring.framework.validator.annotation.PersonInfoContraint;
 import org.springframework.format.annotation.NumberFormat;
 
-import javax.validation.Valid;
+import com.fayne.demo.javax.validation.Person;
 import javax.validation.constraints.NotNull;
 
 public class EmployeeInfo {
 
-    @PersonInfoContraint
-    private PersonInfo personInfo;
+    private Person person;
 
-    @NumberFormat
     double salary;
+
+    @NumberFormat(pattern = "#.##")
+    public double getSalary() {
+        return salary;
+    }
+
+    public void setSalary( double salary) {
+        this.salary = salary;
+    }
+
 
     @NotNull
     private String duty;
 
 
-    public PersonInfo getPersonInfo() {
-        return personInfo;
+    public Person getPerson() {
+        return person;
     }
 
-    public void setPersonInfo(PersonInfo personInfo) {
-        this.personInfo = personInfo;
+    public void setPerson(Person person) {
+        this.person = person;
     }
 
     public String getDuty() {

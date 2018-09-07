@@ -1,6 +1,5 @@
-package com.fayne.demo.spring.framework.validator;
+package com.fayne.demo.javax.validation;
 
-import com.fayne.demo.spring.framework.validator.annotation.PersonInfoContraint;
 import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.web.servlet.config.annotation.EnableWebMvc;
@@ -13,5 +12,5 @@ import org.springframework.web.servlet.config.annotation.EnableWebMvc;
 @Configuration
 @EnableWebMvc
 @ComponentScan
-public class ValidatorConfig {
+public class ValidationConfig {
 }
